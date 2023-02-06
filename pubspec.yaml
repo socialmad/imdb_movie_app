@@ -1,0 +1,33 @@
+name: imdb_movie_app
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.18.6 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  cached_network_image: 3.2.3
+  connectivity_plus: 3.0.2
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  fonts: 
+    - family: Poppins Bold
+      fonts: 
+        - asset: assets/fonts/Poppins-Bold.ttf
+    - family: Poppins Medium
+      fonts: 
+        - asset: assets/fonts/Poppins-Medium.ttf
+    - family: Poppins Regular
+      fonts: 
+        - asset: assets/fonts/Poppins-Regular.ttf
+  uses-material-design: true
+
