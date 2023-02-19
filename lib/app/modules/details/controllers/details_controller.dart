@@ -4,7 +4,7 @@ import 'package:imdb_movie_app/app/data/providers/movie_provider.dart';
 
 class DetailsController extends GetxController {
   int movieId = Get.arguments['movie_id'] ?? 0;
-  MovieProvider movieProvider = MovieProvider();
+  final MovieProvider movieProvider = Get.find<MovieProvider>();
 
   RxBool isLoading = true.obs;
   RxList<MovieDetails> movie = <MovieDetails>[].obs;

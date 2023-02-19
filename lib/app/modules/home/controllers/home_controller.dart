@@ -3,7 +3,7 @@ import 'package:imdb_movie_app/app/data/models/movie_model.dart';
 import 'package:imdb_movie_app/app/data/providers/movie_provider.dart';
 
 class HomeController extends GetxController {
-  MovieProvider movieProvider = MovieProvider();
+  final MovieProvider movieProvider = Get.find<MovieProvider>();
   RxList<MovieModel> movies = <MovieModel>[].obs;
   RxBool isLoading = true.obs;
 
